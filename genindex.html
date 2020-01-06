@@ -1,197 +1,132 @@
 
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="lang:clipboard.copy" content="Copy to clipboard">
-  <meta name="lang:clipboard.copied" content="Copied to clipboard">
-  <meta name="lang:search.language" content="en">
-  <meta name="lang:search.pipeline.stopwords" content="True">
-  <meta name="lang:search.pipeline.trimmer" content="True">
-  <meta name="lang:search.result.none" content="No matching documents">
-  <meta name="lang:search.result.one" content="1 matching document">
-  <meta name="lang:search.result.other" content="# matching documents">
-  <meta name="lang:search.tokenizer" content="[\s\-]+">
-
-  
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono:400,500,700&display=fallback">
-
-    <style>
-      body,
-      input {
-        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
-      }
-
-      code,
-      kbd,
-      pre {
-        font-family: "Roboto Mono", "Courier New", Courier, monospace
-      }
-    </style>
-  
-
-  <link rel="stylesheet" href="_static/stylesheets/application.css"/>
-  <link rel="stylesheet" href="_static/stylesheets/application-palette.css"/>
-  <link rel="stylesheet" href="_static/stylesheets/application-fixes.css"/>
-  
-  <link rel="stylesheet" href="_static/fonts/material-icons.css"/>
-  
-  <meta name="theme-color" content="#3f51b5">
-  <script src="_static/javascripts/modernizr.js"></script>
-  
-  
-  
-    <title>Index &#8212; Phimp.me  documentation</title>
-    <link rel="stylesheet" href="_static/material.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Index &mdash; Phimp.me development documentation</title> 
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="_static/fossasia.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+      URL_ROOT:    './',
+      VERSION:     'development',
+      COLLAPSE_INDEX: false,
+      FILE_SUFFIX: '.html',
+      HAS_SOURCE:  true,
+      SOURCELINK_SUFFIX: '.txt'
+    };
+  </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="#" />
-    <link rel="search" title="Search" href="search.html" />
-  
-   
-  
-  <script src="_static/javascripts/version_dropdown.js"></script>
+    <script type="text/javascript" src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/fossasia/loklak-timeline-plugin/master/plugin.js"></script>    
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
-    var json_loc = ""versions.json"",
-        target_loc = "../",
-        text = "Versions";
-    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+    $(document).ready(function(){
+      $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top - 80
+            }, 1000, function() {
+              var $target = $(target);
+                $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+              return false;
+              } else {
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
+      $('#back-to-top').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
+    });
   </script>
-
-
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" /> 
   </head>
-  <body dir=ltr
-        data-md-color-primary=blue data-md-color-accent=light-blue>
-  
-  <svg class="md-svg">
-    <defs data-children-count="0">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
-      
-    </defs>
-  </svg>
-  
-  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
-  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
-  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-  <a href="#genindex" tabindex="1" class="md-skip"> Skip to content </a>
-  <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex navheader">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="index.html" title="Phimp.me  documentation"
-           class="md-header-nav__button md-logo">
-          
-            &nbsp;
-          
-        </a>
+  <body>
+    <div class="container-fluid main"> 
+  <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#"><img class="img-responsive" src="http://fossasia.org/img/fossasia-dark.png" style="width: 50%" /></a>
       </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right menu">
+              
+              <li><a href=#>About</a></li>
+              
+              
+              <li><a href=#>Docs</a></li>
+              
+              
+              <li><a href=http://blog.fossasia.org/>Blog</a></li>
+              
+              
+              <li><a href=http://fossasia.org/donate/>Donate</a></li>
+              
+              
+              <li><a href=http://blog.fossasia.org/contact/>Contact</a></li>
+              
+              
+              <li class="social-link hidden-md hidden-sm hidden-xs"><a href=https://twitter.com/fossasia><i class="fa fa-twitter fa-lg"></i></a></li>
+              
+              
+              <li class="social-link hidden-md hidden-sm hidden-xs"><a href=https://facebook.com/fossasia><i class="fa fa-facebook fa-lg"></i></a></li>
+              
+          </ul>
       </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          <span class="md-header-nav__topic">Phimp.me  documentation</span>
-          <span class="md-header-nav__topic"> Index </span>
-        </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-        
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" action="search.html" method="GET" name="search">
-      <input type="text" class="md-search__input" name="q" placeholder="Search"
-             autocapitalize="off" autocomplete="off" spellcheck="false"
-             data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
+    </div>
+  </nav>
+      <div class="container">
+        <div class="col-md-3 hidden-sm hidden-xs"> 
+  <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+    <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
 
-      </div>
-      
+   
+
     </div>
-  </nav>
-</header>
-
-  
-  <div class="md-container">
-    
-    
-    
-  <nav class="md-tabs" data-md-component="tabs">
-    <div class="md-tabs__inner md-grid">
-      <ul class="md-tabs__list">
-          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">Phimp.me  documentation</a></li>
-      </ul>
-    </div>
-  </nav>
-    <main class="md-main">
-      <div class="md-main__inner md-grid" data-md-component="container">
-        
-          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-            <div class="md-sidebar__scrollwrap">
-              <div class="md-sidebar__inner">
-                <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="index.html" title="Phimp.me  documentation" class="md-nav__button md-logo">
-      
-        <img src="_static/" alt=" logo" width="48" height="48">
-      
-    </a>
-    <a href="index.html"
-       title="Phimp.me  documentation">Phimp.me  documentation</a>
-  </label>
-  
-
-</nav>
-              </div>
-            </div>
-          </div>
-          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-            <div class="md-sidebar__scrollwrap">
-              <div class="md-sidebar__inner">
-                
-<nav class="md-nav md-nav--secondary">
-  <ul class="md-nav__list" data-md-scrollfix="">
-    
-
-<li id="searchbox" class="md-nav__item"></li>
-
-  </ul>
-</nav>
-              </div>
-            </div>
-          </div>
-        
-        <div class="md-content">
-          <article class="md-content__inner md-typeset" role="main">
-            
+  </div> 
+        </div>
+        <div class="document col-md-9"> <!-- Document -->
+          <div> <!-- Document Wrapper -->
+            <div class="body" role="main"> <!-- Body-->
 
 <h1 id="index">Index</h1>
 
@@ -200,37 +135,63 @@
 </div>
 
 
-          </article>
+            </div>
+          </div> 
         </div>
       </div>
-    </main>
-  </div>
-  <footer class="md-footer">
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-          
-          
-        </a>
-        
-      </nav>
+      <div class="footer-container">
+        <footer role="contentinfo" class="footer">
+          <div class="container">
+            
+    <div class="row">
+      <div class="col-sm-2">
+        <ul class="menu">
+        <li><a target="_self" href="http://blog.fossasia.org">Blog</a></li>
+        <li><a target="_self" href="http://github.com/fossasia">Github</a></li>
+        <li><a target="_self" href="http://labs.fossasia.org/#projects">Projects</a></li>
+        <li><a target="_self" href="http://coc.fossasia.org/">Code of Conduct</a></li>
+        <li><a target="_self" href="./about">About</a></li>
+        <li><a target="_self" href="http://blog.fossasia.org/contact">Contact</a></li>
+        <li><a target="_self" href="./donate/">Donate</a></li>
+        <li><a class="inner-link" id="back-to-top" href="#top">Back To Top</a></li>
+      </ul>
+      </div>
+      <div class="col-sm-7">
+        <span class="lead color-heading">About FOSSASIA</span>
+      <p>
+FOSSASIA is the premier Free and Open Source technology organization in Asia for developers, designers, start-ups, and contributors. Projects at FOSSASIA range from open hardware, to design, graphics and software. FOSSASIA was established in 2009. The annual FOSSASIA Summit took place in Cambodia, Vietnam and Singapore. FOSSASIA meetup groups exist throughout Asia.</p>
+      </div>
+      <div class="col-sm-3">
+        <ul class="contact-methods">
+        <li><i class="fa fa-envelope fa-lg"></i><span><a id="mailAdd" href="mailto:fossasia@googlegroups.com" target="_self" style="color:#777777">&nbsp;fossasia@googlegroups.com</a></span></li>
+        <li><i class="fa fa-mobile fa-lg"></i><span>&nbsp;+65 83435672</span></li>
+        <li><i class="fa fa-map-marker fa-lg"></i><span>&nbsp;Ms. DANG Hong Phuc</span></li>
+        <li><span>FOSSASIA</span></li>
+        <li><span>Xoai Building, 93 Mau Than Street Xuan Khan, Ninh Kieu 9000 Can Tho, Vietnam</span></li>
+      </ul>
+      </div>
     </div>
-    <div class="md-footer-meta md-typeset">
-      <div class="md-footer-meta__inner md-grid">
-        <div class="md-footer-copyright">
-          <div class="md-footer-copyright__highlight">
-              &#169; Copyright 2019, FOSSASIA.
-              
+    <div class="row">
+      <div class="col-sm-12 text-center">
+      <ul class="social-profiles">
+        <li><a target="_self" href="http://twitter.com/fossasia"><i class="fa fa-twitter"></i></a></li>
+        <li><a target="_self" href="http://facebook.com/fossasia"><i class="fa fa-facebook"></i></a></li>
+        <li><a target="_self" href="https://www.linkedin.com/groups/FOSSASIA-3762811"><i class="fa fa-linkedin fa-lg"></i></a></li>
+        <li><a target="_self" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ"><i class="fa fa-youtube icon-large"></i></a></li>
+        <li><a target="_self" href="https://www.flickr.com/photos/fossasia"><i class="fa fa-flickr fa-lg"></i></a></li>
+        <li><a target="_self" href="https://www.instagram.com/explore/tags/fossasia/"><i class="fa fa-instagram"></i></a></li>
+        <li><a target="_self" href="https://github.com/fossasia"><i class="fa fa-github fa-lg"></i></a></li>
+      </ul>
+      </div>
+    </div>
+            <hr />
+            <div class="copy">
+                  &copy; 2020, FOSSASIA. All Rights Reserved.
+                Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+            </div>
           </div>
-            Created using
-            <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
-             and
-            <a href="https://github.com/bashtage/sphinx-material/">Material for
-              Sphinx</a>
-        </div>
+        </footer>
       </div>
     </div>
-  </footer>
-  <script src="_static/javascripts/application.js"></script>
-  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
   </body>
 </html>

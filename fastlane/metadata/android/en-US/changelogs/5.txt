@@ -1,4 +1,0 @@
-Major Bug Fixes.
-Share to whatsapp working
-Editing optimized
-Camera feature enhanced
