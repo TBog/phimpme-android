@@ -13,3 +13,7 @@ build
 libopencv_*
 viewflow/
 keystore.properties
+
+*.log
+
+app/.cxx/
